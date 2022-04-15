@@ -11,7 +11,7 @@ curl -X POST \
 	-d @<(cat <<EOF 
 { "chat_id": "$TELEGRAM_CHAT_ID_DHANUR", "message_id": 212}
 EOF) \
-	"https://api.telegram.org/bot$TELEGRAM_ACCESS_TOKEN/deleteMessage" \
+	"https://api.telegram.org/bot$DWK_TOKEN/deleteMessage" \
 
 # https://github.com/nats-io/nats.js
 
