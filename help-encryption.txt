@@ -1,1 +1,0 @@
-Visit: https://github.com/sahilrajput03/devopswithkubernetes/tree/main/learn-sops
