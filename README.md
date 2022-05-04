@@ -18,4 +18,5 @@ git clone --recursive https://github.com/danog/php-libtgvoip && cd php-libtgvoip
 sudo apt-get install php7.4-xml
 sudo apt-get install php7.4-mbstring
 wget https://github.com/danog/magnaluna/raw/master/magna.php && php magna.php
+# FYI: When asked for number use 918360****** and use automated process to login instead of using the user api and api_tokens.
 ```
