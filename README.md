@@ -20,3 +20,10 @@ sudo apt-get install php7.4-mbstring
 wget https://github.com/danog/magnaluna/raw/master/magna.php && php magna.php
 # FYI: When asked for number use 918360****** and use automated process to login instead of using the user api and api_tokens.
 ```
+
+
+```bash
+# For bots only(imo ~ Sahil):
+# 5.6k Stars on github: https://github.com/telegraf/telegraf
+# Docs: https://telegraf.js.org/
+```
