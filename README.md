@@ -8,9 +8,6 @@ For telegram calling bot, checkout:
 # Telegram Calling Bot
 # ====================
 
-See my latest testing with telegram-radio thing (readme.md includes how to use):
-https://github.com/sahilrajput03/lemonjamsbot
-
 https://github.com/danog/magnaluna
 https://github.com/danog/php-libtgvoip
 
@@ -26,6 +23,9 @@ wget https://github.com/danog/magnaluna/raw/master/magna.php && php magna.php
 
 
 ```bash
+# See my latest testing with telegram-radio thing (readme.md includes how to use):
+https://github.com/sahilrajput03/lemonjamsbot
+
 # For bots only(imo ~ Sahil):
 # 5.6k Stars on github: https://github.com/telegraf/telegraf
 # Docs: https://telegraf.js.org/
