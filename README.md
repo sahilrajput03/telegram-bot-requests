@@ -23,3 +23,20 @@ sudo apt-get install php7.4-mbstring
 wget https://github.com/danog/magnaluna/raw/master/magna.php && php magna.php
 # FYI: When asked for number use 918360****** and use automated process to login instead of using the user api and api_tokens.
 ```
+
+
+```bash
+# For bots only(imo ~ Sahil):
+# 5.6k Stars on github: https://github.com/telegraf/telegraf
+# Docs: https://telegraf.js.org/
+
+# gramjs - Github 427 Stars (NodeJS/Browser MTProto API Telegram client library,)
+https://github.com/gram-js/gramjs
+A Telegram client written in JavaScript for Node.js and browsers, with its core being based on Telethon.
+
+# LemonJamsBot - https://github.com/tgcallsjs/LemonJamsBot
+
+# Telethon - Github 6.4K Stars - Pure Python 3 MTProto API Telegram client library, for bots too!
+https://github.com/LonamiWebs/Telethon
+
+```
