@@ -23,6 +23,9 @@ wget https://github.com/danog/magnaluna/raw/master/magna.php && php magna.php
 
 
 ```bash
+# official telegram audio/video call api docs: AWESOME:DOCS
+https://core.telegram.org/api/end-to-end/video-calls
+
 # See my latest testing with telegram-radio thing (readme.md includes how to use):
 https://github.com/sahilrajput03/lemonjamsbot
 
