@@ -8,6 +8,9 @@ For telegram calling bot, checkout:
 # Telegram Calling Bot
 # ====================
 
+See my latest testing with telegram-radio thing (readme.md includes how to use):
+https://github.com/sahilrajput03/lemonjamsbot
+
 https://github.com/danog/magnaluna
 https://github.com/danog/php-libtgvoip
 
