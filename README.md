@@ -2,6 +2,9 @@
 
 Visit: [Guide on .env encryption](https://github.com/sahilrajput03/devopswithkubernetes/tree/main/learn-sops#encrypting-decrypting-env-file)
 
+**Quick Links:**
+- Styled text with message entities: [Click here](https://core.telegram.org/api/entities)
+
 For telegram calling bot, checkout:
 
 ```bash
