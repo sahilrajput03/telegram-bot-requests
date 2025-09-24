@@ -1,8 +1,9 @@
 # README
 
-Visit: [Guide on .env encryption](https://github.com/sahilrajput03/devopswithkubernetes/tree/main/learn-sops#encrypting-decrypting-env-file)
+Visit: [Guide on .env encryption](https://github.com/sahilrajput03/devopswithkubernetes/tree/main/learn-sops#encrypting-decrypting-env-file) (#sops)
 
 **Quick Links:**
+
 - Styled text with message entities: [Click here](https://core.telegram.org/api/entities)
 
 For telegram calling bot, checkout:
@@ -23,7 +24,6 @@ sudo apt-get install php7.4-mbstring
 wget https://github.com/danog/magnaluna/raw/master/magna.php && php magna.php
 # FYI: When asked for number use 918360****** and use automated process to login instead of using the user api and api_tokens.
 ```
-
 
 ```bash
 # official telegram audio/video call api docs: AWESOME:DOCS

@@ -4,11 +4,12 @@
 source .env
 
 # GET A THOUGHT
-while [[ -z $text ]] ; do
-	text=$(shuf /home/array/Documents/github_repos/sahilrajput03/thoughts-principles.md -n1 | grep '.')
-done
+# while [[ -z $text ]] ; do
+# 	text=$(shuf /home/array/Documents/github_repos/sahilrajput03/thoughts-principles.md -n1 | grep '.')
+# done
 
 echo  Thought is: $text
+text="Hey there?"
 
 # ENABLE MONITORING:
 # echo Sending $text to ratan @ $(date) >> /tmp/ratan-log.txt
