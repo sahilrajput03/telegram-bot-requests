@@ -18,6 +18,8 @@ https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook?url=https://yourdomain.c
 
 ✅ Now, you can handle the post requests to handle incoming messages to the bot.
 
+❤️ You can delete the webhook via - https://api.telegram.org/bot<YOUR_BOT_TOKEN>/deleteWebhook
+
 ## For telegram calling bot, checkout:
 
 ```bash
