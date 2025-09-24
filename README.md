@@ -6,7 +6,19 @@ Visit: [Guide on .env encryption](https://github.com/sahilrajput03/devopswithkub
 
 - Styled text with message entities: [Click here](https://core.telegram.org/api/entities)
 
-For telegram calling bot, checkout:
+## Setup webhook for your bot
+
+Source: [ChatGPT](https://chatgpt.com/c/68d42f89-fde8-8324-8993-14b288d101e1)
+
+Call below api to set webhook url.
+
+```bash
+https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook?url=https://yourdomain.com/webhook
+```
+
+✅ Now, you can handle the post requests to handle incoming messages to the bot.
+
+## For telegram calling bot, checkout:
 
 ```bash
 # Telegram Calling Bot
