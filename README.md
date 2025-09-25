@@ -14,8 +14,6 @@ Call below api to set webhook url.
 
 `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook?url=https://yourdomain.com/webhook`
 
-````
-
 ✅ Now, you can handle the post requests to handle incoming messages to the bot.
 
 ❤️ You can delete the webhook via - `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/deleteWebhook`
@@ -37,7 +35,7 @@ sudo apt-get install php7.4-xml
 sudo apt-get install php7.4-mbstring
 wget https://github.com/danog/magnaluna/raw/master/magna.php && php magna.php
 # FYI: When asked for number use 918360****** and use automated process to login instead of using the user api and api_tokens.
-````
+```
 
 ```bash
 # official telegram audio/video call api docs: AWESOME:DOCS
