@@ -5,6 +5,8 @@ Visit: [Guide on .env encryption](https://github.com/sahilrajput03/devopswithkub
 **Quick Links:**
 
 - Styled text with message entities: [Click here](https://core.telegram.org/api/entities)
+- Can i get token for my own telegram account as well so i can send messages via telegram api call? [ChatGPT](https://chatgpt.com/c/68d4e3da-0230-8328-8021-24f1d0c0fd00)
+  - tldr; Use [gramjs](https://github.com/gram-js/gramjs)
 
 ## Setup webhook for your bot
 
