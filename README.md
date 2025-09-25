@@ -10,14 +10,16 @@ Visit: [Guide on .env encryption](https://github.com/sahilrajput03/devopswithkub
 
 ## Bot Libraries:
 
-- `telegraf`:
-  - Github: [Click here](https://github.com/telegraf/telegraf) 5.6k\*
-  - Docs: [Click here](https://telegraf.js.org/)
-- `gramjs` - (NodeJS/Browser MTProto API Telegram client library)
-  - [Github](https://github.com/gram-js/gramjs) 427\*
-  - A Telegram client written in JavaScript for Node.js and browsers, with its core being based on Telethon.
-- `telethon`: Pure Python 3 MTProto API Telegram client library, for bots too!
-  - Github: [Click here](https://github.com/LonamiWebs/Telethon) 6.4K\*
+- **Javascript:**
+  - `telegraf`:
+    - Github: [Click here](https://github.com/telegraf/telegraf) 5.6k\*
+    - Docs: [Click here](https://telegraf.js.org/)
+  - `gramjs` - (NodeJS/Browser MTProto API Telegram client library)
+    - Github: [Click here](https://github.com/gram-js/gramjs) 427\*
+    - A Telegram client written in JavaScript for Node.js and browsers, with its core being based on Telethon.
+- **Python:**
+  - Python: `telethon`: Pure Python 3 MTProto API Telegram client library, for bots too!
+    - Github: [Click here](https://github.com/LonamiWebs/Telethon) 6.4K\*
 
 ## Setup webhook for your bot
 
