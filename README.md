@@ -10,7 +10,7 @@ Visit: [Guide on .env encryption](https://github.com/sahilrajput03/devopswithkub
 
 Source: [ChatGPT](https://chatgpt.com/c/68d42f89-fde8-8324-8993-14b288d101e1)
 
-- ❤️ You can creqate webhook via - `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook?url=https://yourdomain.com/webhook`
+- ❤️ You can create webhook via - `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook?url=https://yourdomain.com/webhook`
   - ✅ Now, you can handle the post requests to handle incoming messages to the bot.
 - ❤️ You can delete the webhook via - `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/deleteWebhook`
 
