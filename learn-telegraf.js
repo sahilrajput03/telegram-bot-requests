@@ -6,6 +6,12 @@ const { CHIHIRO_TOKEN } = process.env;
 
 const { Telegraf } = require('telegraf');
 
+// * Learn:
+// ! 1. In this file, running `bot.launch()` deletes your existing webhook. [TESTED: 28 Sept 2025].
+// 2. Using `bot.launch(..)` launches in polling mode by default. Source:
+//    - https://stackoverflow.com/a/65782178/10012446
+//    - https://github.com/telegraf/telegraf/releases/tag/v4.0.0
+
 // !NOW [] Add telegraf and gemini api for usage to dev.mypot.in and test
 //          it all to create some html pages today.
 
@@ -100,7 +106,7 @@ bot.hears('bye', ctx => {
 //   specified command callbacks.
 // * LEARN: Below listener will be triggered for any type of message
 //   except the messages intercepted by above command based specified
-//   callbacks.
+//   callbacks. [TESTED]
 bot.on('message', (ctx) => {
   console.log('✅Received a message!');
   console.log(ctx.message); // Log the entire message object
