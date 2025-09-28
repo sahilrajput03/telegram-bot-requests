@@ -25,9 +25,46 @@ Visit: [Guide on .env encryption](https://github.com/sahilrajput03/devopswithkub
 
 Source: [ChatGPT](https://chatgpt.com/c/68d42f89-fde8-8324-8993-14b288d101e1)
 
+**NOTE: Using telgramf in general way deletes your webhook url, please check file `learn-telegraf.js` for more info.**
+
 - ❤️ You can create webhook via - `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook?url=https://yourdomain.com/webhook`
   - ✅ Now, you can handle the post requests to handle incoming messages to the bot.
 - ❤️ You can delete the webhook via - `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/deleteWebhook`
+
+_✅Example with webhook url:_
+
+```js
+export const telegramWebhookController = (req, res) => {
+  console.log("Received message:", req.body);
+  // Output:
+  // {
+  //   update_id: 308413898,
+  //   message: {
+  //     message_id: 14295,
+  //     from: {
+  //       id: 711263195, // * `userChatId`
+  //       is_bot: false,
+  //       first_name: 'Sahil',
+  //       last_name: 'Rajput',
+  //       username: 'SahilRajput03', // * `username`
+  //       language_code: 'en'
+  //     },
+  //     chat: {
+  //       id: 711263195,
+  //       first_name: 'Sahil',
+  //       last_name: 'Rajput',
+  //       username: 'SahilRajput03',
+  //       type: 'private'
+  //     },
+  //     date: 1758737582,
+  //     text: '❤️❤️❤️😍😍🙂🙂' // * `message`
+  //   }
+  // }
+  return void res.sendStatus(200);
+};
+
+app.post("/api/v1/telegram/webhook", telegramWebhookController);
+```
 
 ## Telegram Calling Bot
 
