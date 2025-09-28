@@ -95,6 +95,26 @@ bot.hears('bye', ctx => {
   });
 });
 
+// * NOTE: Please keep the `message` handler after all command
+//   definitions otherwise `message` handler prevents execution of the
+//   specified command callbacks.
+// * LEARN: Below listener will be triggered for any type of message
+//   except the messages intercepted by above command based specified
+//   callbacks.
+bot.on('message', (ctx) => {
+  console.log('✅Received a message!');
+  console.log(ctx.message); // Log the entire message object
+
+  // You can then check the message type and content
+  if (ctx.message.text) {
+    ctx.reply(`✅You sent a text message: ${ctx.message.text}`);
+  } else if (ctx.message.photo) {
+    ctx.reply('✅You sent a photo!');
+  } else {
+    ctx.reply('✅You sent something else!');
+  }
+});
+
 bot.launch();
 
 // Enable graceful stop
