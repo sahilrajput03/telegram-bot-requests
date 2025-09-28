@@ -12,9 +12,6 @@ const { Telegraf } = require('telegraf');
 //    - https://stackoverflow.com/a/65782178/10012446
 //    - https://github.com/telegraf/telegraf/releases/tag/v4.0.0
 
-// !NOW [] Add telegraf and gemini api for usage to dev.mypot.in and test
-//          it all to create some html pages today.
-
 const bot = new Telegraf(CHIHIRO_TOKEN);
 
 // Learn: Callback is called when anybody sends a sticker.
@@ -121,7 +118,9 @@ bot.on('message', (ctx) => {
   }
 });
 
-bot.launch();
+bot.launch(() => {
+  console.log('\n✅🚀Bot launched');
+});
 
 // Enable graceful stop
 process.once('SIGINT', () => bot.stop('SIGINT'));

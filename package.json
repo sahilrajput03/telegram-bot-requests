@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/sahilrajput03/telegram-bot-requests#readme",
   "dependencies": {
+    "@google/genai": "^1.21.0",
+    "@modelcontextprotocol/sdk": "^1.18.2",
     "dotenv": "^17.2.2",
     "telegraf": "^4.16.3"
   }
