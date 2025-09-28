@@ -1,0 +1,24 @@
+{
+  "name": "telegram-bot-requests",
+  "version": "1.0.0",
+  "description": "Visit: [Guide on .env encryption](https://github.com/sahilrajput03/devopswithkubernetes/tree/main/learn-sops#encrypting-decrypting-env-file) (#sops)",
+  "main": "telegraf-1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahilrajput03/telegram-bot-requests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahilrajput03/telegram-bot-requests/issues"
+  },
+  "homepage": "https://github.com/sahilrajput03/telegram-bot-requests#readme",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "telegraf": "^4.16.3"
+  }
+}
