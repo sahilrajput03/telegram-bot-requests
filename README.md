@@ -31,7 +31,7 @@ Source: [ChatGPT](https://chatgpt.com/c/68d42f89-fde8-8324-8993-14b288d101e1)
   - ✅ Now, you can handle the post requests to handle incoming messages to the bot.
 - ❤️ You can delete the webhook via - `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/deleteWebhook`
 
-_✅Example with webhook url:_
+✅ Example with webhook url:
 
 ```js
 export const telegramWebhookController = (req, res) => {
@@ -68,15 +68,9 @@ app.post("/api/v1/telegram/webhook", telegramWebhookController);
 
 ## Telegram Calling Bot
 
-### ️1. Official Telegram audio/video call api docs: AWESOME:DOCS
-
-[Click here](https://core.telegram.org/api/end-to-end/video-calls) _[NOT TESTED]_
-
-### 2. ❤️ Telegram radio experiment Using `lemonjamsbot` (My Latest Experiment)
-
-[Click here](https://github.com/sahilrajput03/lemonjamsbot), [lemonjamsbot](https://github.com/tgcallsjs/LemonJamsBot)
-
-### 3. Using `magnaluna` and `php-libtgvoip`
+1. Official Telegram audio/video call api docs (Awesome Docs): [Click here](https://core.telegram.org/api/end-to-end/video-calls) _[NOT TESTED]_
+2. ❤️ Telegram radio experiment Using `lemonjamsbot` (My Latest Experiment): [Click here](https://github.com/sahilrajput03/lemonjamsbot), [lemonjamsbot](https://github.com/tgcallsjs/LemonJamsBot)
+3. Using `magnaluna` and `php-libtgvoip`
 
 - `magnaluna`: [Github](https://github.com/danog/magnaluna)
 - `php-libtgvoip`: [Github](https://github.com/danog/php-libtgvoip)
