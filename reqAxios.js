@@ -7,8 +7,9 @@ const { BRUNO_TOKEN, YES_PRINT_ALERTS_TOKEN, CHAT_ID_SAHIL, CHAT_ID_YES_PRINT_GR
 // const botToken = BRUNO_TOKEN;
 const botToken = YES_PRINT_ALERTS_TOKEN;
 
-// const chatId = CHAT_ID_SAHIL; // 711263195 (number)
-const chatId = CHAT_ID_YES_PRINT_GROUP; // 711263195 (number)
+// Learn: We can get the `chatId` from the url bar after selecting any chat in web telegram.
+// const chatId = CHAT_ID_SAHIL;
+const chatId = CHAT_ID_YES_PRINT_GROUP;
 
 
 async function main() {
