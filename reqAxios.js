@@ -19,7 +19,7 @@ async function main() {
         // console.log("🚀 ~ res:", res.data);
         console.log('res.data.ok', res.data.ok); // `true`
     } catch (error) {
-        console.log("🚀 ~ error:", error);
+        console.log("🔴 (telegram) Failed to send message: error:", error);
     }
 }
 main();
