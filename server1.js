@@ -2,6 +2,10 @@
 const dotenv = require('dotenv');
 dotenv.config({ quiet: true });
 
+// * Benchmark Memory consumption via `top -pid PID_HERE`
+//  1. A simple program takes 9mb with `setTimeout(() => { console.log('boom')}, 5_000)`
+//  2. This server memory cost is 19mb.
+
 const { CHIHIRO_TOKEN } = process.env;
 
 const { Telegraf } = require('telegraf');
