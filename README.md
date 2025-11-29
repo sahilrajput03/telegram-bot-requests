@@ -18,7 +18,7 @@ Visit: [Guide on .env encryption](https://github.com/sahilrajput03/devopswithkub
     - Github: [Click here](https://github.com/gram-js/gramjs) 1.6k\*
     - A Telegram client written in JavaScript for Node.js and browsers, with its core being based on Telethon.
 - **Python:**
-  - Python: `telethon`: Pure Python 3 MTProto API Telegram client library, for bots too!
+  - `telethon`: Pure Python 3 MTProto API Telegram client library, for bots too!
     - Github: [Click here](https://github.com/LonamiWebs/Telethon) 6.4K\*
 
 ## Setup webhook for your bot
