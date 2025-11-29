@@ -6,7 +6,7 @@ dotenv.config({ quiet: true });
 //  1. A simple program takes 9mb with `setTimeout(() => { console.log('boom')}, 5_000)`
 //  2. This server memory cost is 19mb.
 
-const { CHIHIRO_TOKEN } = process.env;
+const { CHIHIRO_TOKEN, CHAT_ID_SAHIL } = process.env;
 
 const { Telegraf } = require('telegraf');
 
@@ -126,7 +126,7 @@ bot.on('message', (ctx) => {
 bot.launch(() => {
   console.log('\n✅🚀Bot launched');
   // Send a message to a specific chat ID right after bot starts
-  const sahilChatId = 711263195;
+  const sahilChatId = CHAT_ID_SAHIL; // 711263195 (number)
   bot.telegram.sendMessage(sahilChatId, 'Hi Sahil, bot launched 🎉!');
 });
 
