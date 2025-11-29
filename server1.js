@@ -108,7 +108,10 @@ bot.on('message', (ctx) => {
 
   // You can then check the message type and content
   if (ctx.message.text) {
-    ctx.reply(`✅You sent a text message: ${ctx.message.text}`);
+    ctx.reply(`✅You sent a text message: ${ctx.message.text}.`);
+    // Learn: Get `chatId` of anyone via:
+    // ctx.reply(`(ChatId is: ${ctx.chat.id})`);
+
   } else if (ctx.message.photo) {
     ctx.reply('✅You sent a photo!');
   } else {
@@ -118,6 +121,9 @@ bot.on('message', (ctx) => {
 
 bot.launch(() => {
   console.log('\n✅🚀Bot launched');
+  // Send a message to a specific chat ID right after bot starts
+  const sahilChatId = 711263195;
+  bot.telegram.sendMessage(sahilChatId, 'Hi Sahil, bot launched 🎉!');
 });
 
 // Enable graceful stop
