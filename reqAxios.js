@@ -2,10 +2,14 @@ const axios = require('axios');
 const dotenv = require('dotenv');
 dotenv.config({ quiet: true });
 
-const { BRUNO_TOKEN, CHAT_ID_SAHIL } = process.env;
+const { BRUNO_TOKEN, YES_PRINT_ALERTS_TOKEN, CHAT_ID_SAHIL, CHAT_ID_YES_PRINT_GROUP } = process.env;
 
-const chatId = CHAT_ID_SAHIL; // 711263195 (number)
-const botToken = BRUNO_TOKEN;
+// const botToken = BRUNO_TOKEN;
+const botToken = YES_PRINT_ALERTS_TOKEN;
+
+// const chatId = CHAT_ID_SAHIL; // 711263195 (number)
+const chatId = CHAT_ID_YES_PRINT_GROUP; // 711263195 (number)
+
 
 async function main() {
     try {
