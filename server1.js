@@ -25,11 +25,9 @@ bot.on('sticker', ctx => ctx.reply('👍'));
 // Learn: You can send a command to this bot by sending
 //        `/command_name` or you can select the command direclty from
 //        the hamburger menu in the bottom-left side.
-
 bot.command('c1', Telegraf.reply('You sent /c1 command.'));
 bot.command('c2', ctx => {
-  // reply for command
-  ctx.reply('You sent /c2 command.');
+  ctx.reply(`You sent /${ctx.command} command.`); // You sent c2 command.
   console.log(ctx.update.message);
   return;
   // Outptut of ctx.update.message
