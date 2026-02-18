@@ -17,9 +17,16 @@ Visit: [Guide on .env encryption](https://github.com/sahilrajput03/devopswithkub
   - `gramjs` - (NodeJS/Browser MTProto API Telegram client library)
     - Github: [Click here](https://github.com/gram-js/gramjs) 1.6k\*
     - A Telegram client written in JavaScript for Node.js and browsers, with its core being based on Telethon.
+  - (TODO_TRY) `grammY` - The Telegram Bot Framework
+    - Github: [Click here](https://github.com/grammyjs/grammY) 3.4k\*
+    - Used by openclaw: [Openclaw](https://github.com/openclaw/openclaw/blob/main/package.json)
+      - [Deepwiki](https://deepwiki.com/search/does-this-uses-any-library-to_40000435-ba83-4ac7-b844-659416bc62a5?mode=fast)
 - **Python:**
   - `telethon`: Pure Python 3 MTProto API Telegram client library, for bots too!
     - Github: [Click here](https://github.com/LonamiWebs/Telethon) 6.4K\*
+    - Docs: [grammy.dev](https://grammy.dev/)
+      - Concurrency With grammY runner: [Click here](https://grammy.dev/plugins/runner.html)
+      - runner Github Repo: [Click here](https://github.com/grammyjs/runner)
 
 ## Setup webhook for your bot
 
