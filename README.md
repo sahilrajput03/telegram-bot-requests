@@ -10,6 +10,8 @@ Visit: [Guide on .env encryption](https://github.com/sahilrajput03/devopswithkub
 
 ## Bot Libraries:
 
+*❤️ Official Telegram Bot API: [Click here](https://core.telegram.org/bots/api)*
+
 - **Javascript:**
   - `telegraf`:
     - ❤️ Used in files: `server1.js` and `server2-chihiro-ai-bot.js`.
