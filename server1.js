@@ -1,6 +1,9 @@
 // @ts-nocheck
 const dotenv = require('dotenv');
 dotenv.config({ quiet: true });
+const { preventPunyCodeWarning } = require('./log-utils');
+
+preventPunyCodeWarning();
 
 // * Benchmark Memory consumption via `top -pid PID_HERE`
 //  1. A simple program takes 9mb with `setTimeout(() => { console.log('boom')}, 5_000)`
@@ -124,7 +127,7 @@ bot.on('message', (ctx) => {
 });
 
 bot.launch(() => {
-  console.log('\n✅🚀Bot launched');
+  console.log('✅🚀Bot launched');
   // Send a message to a specific chat ID right after bot starts
   const sahilChatId = CHAT_ID_SAHIL; // 711263195 (number)
   bot.telegram.sendMessage(sahilChatId, 'Hi Sahil, bot launched 🎉!');

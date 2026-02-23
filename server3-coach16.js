@@ -1,35 +1,14 @@
 // @ts-nocheck
+const { Telegraf } = require('telegraf');
 const dotenv = require('dotenv');
 dotenv.config({ quiet: true });
-const { ai } = require('./config.js');
-const { mcpToTool } = require('@google/genai');
-// import { Client } from "@modelcontextprotocol/sdk/client/index.js";
-// import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
-const { Client } = require("@modelcontextprotocol/sdk/client/index.js");
-const { StdioClientTransport } = require("@modelcontextprotocol/sdk/client/stdio.js");
+const { ai } = require('./config');
 const { preventPunyCodeWarning } = require('./log-utils');
 
 preventPunyCodeWarning();
 
-// Create server parameters for stdio connection
-const serverParams = new StdioClientTransport({
-    "command": "npx",
-    "args": [
-        "-y",
-        "@modelcontextprotocol/server-filesystem",
-        "/Users/apple/Documents/github_repos/learn-openai/mcp/filesystem/p1",
-        "/Users/apple/Documents/github_repos/learn-openai/mcp/filesystem/p2"
-    ]
-});
-const mcpClient = new Client({ name: "example-client", version: "1.0.0" });
-// Initialize the connection between client and server
-mcpClient.connect(serverParams).then(() => console.log('✅mcp client connected!'));
-
-const { CHIHIRO_TOKEN } = process.env;
-
-const { Telegraf } = require('telegraf');
-
-const bot = new Telegraf(CHIHIRO_TOKEN);
+const { COACH16_TOKEN } = process.env;
+const bot = new Telegraf(COACH16_TOKEN);
 
 bot.on('message', async (ctx) => {
     console.log('✅Received a message!');
@@ -50,6 +29,8 @@ bot.on('message', async (ctx) => {
                 // tools: [mcpToTool(mcpClient)],  // uses the session, will automatically call the tool
                 // Uncomment below line if you **don't** want the sdk to automatically call the tool (Google AI Docs)
                 // automaticFunctionCalling: { disable: true, },
+                // Learn: Default value of `thinkingBudget` is -1 i.e, dynamic thinking enable. Source: https://ai.google.dev/gemini-api/docs/thinking#levels-budgets
+                thinkingConfig: { thinkingBudget: 0 },
             },
         });
         // console.log('\n✅RESPONSE: ', response.text);
