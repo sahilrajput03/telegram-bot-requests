@@ -31,6 +31,13 @@ const { Telegraf } = require('telegraf');
 
 const bot = new Telegraf(CHIHIRO_TOKEN);
 
+// Learn: I used this to send audio from the bot. [Worked]
+// bot.command("audio", (ctx) => {
+//     ctx.replyWithAudio({
+//         source: "./hello-sahil.mp3"
+//     });
+// });
+
 bot.on('message', async (ctx) => {
     console.log('✅Received a message!');
     console.log(ctx.message); // Log the entire message object
