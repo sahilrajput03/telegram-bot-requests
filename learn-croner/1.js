@@ -2,10 +2,6 @@
 const { Cron, scheduledJobs } = require('croner');
 const { app1DB } = require('./filedb');
 
-// Web: https://croner.56k.guru
-// Docs: https://github.com/Hexagon/croner
-// Example: https://chatgpt.com/c/6a0c9837-c090-83e8-aabc-7212219c85be
-
 const aauJobs = app1DB.get().agents?.aau?.jobs || [];
 // Shape of a job: `{name, pattern}`
 
@@ -38,12 +34,3 @@ if (!scheduledJobs.map(j => j.name).find(name => name === "WORK_PROGRESS_CHECK")
         console.log('✅ Added job successfully.');
     }, 2_000);
 }
-
-
-
-// Example of creating cronjob:
-// const job = new Cron('*/5 * * * * *', { name: 'WORK_PROGRESS_CHECK' }, () => {
-//     console.log('This will run every fifth second');
-// });
-// console.log("🚀 ~ job.name?", job.name);
-// console.log("🚀 ~ scheduledJobs?", scheduledJobs.map(c => c.name));
