@@ -1,0 +1,12 @@
+{
+  "agents": {
+    "aau": {
+      "jobs": [
+        {
+          "name": "WORK_PROGRESS_CHECK",
+          "pattern": "*/5 * * * * *"
+        }
+      ]
+    }
+  }
+}
