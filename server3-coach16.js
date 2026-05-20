@@ -13,6 +13,7 @@ const bot = new Telegraf(COACH16_TOKEN);
 bot.on('message', async (ctx) => {
     console.log('✅Received a message!');
     console.log(ctx.message); // Log the entire message object
+    console.log(ctx.message.text); // Log the entire message object
 
     ctx.sendChatAction('typing');
     const intervalId = setInterval(() => ctx.sendChatAction('typing'), 7_000);
@@ -23,7 +24,7 @@ bot.on('message', async (ctx) => {
         response = await ai.models.generateContent({
             model: "gemini-2.5-flash",
             // contents: `Can you see the files in p1 and p2 folders?.`,
-            contents: ctx.message,
+            contents: ctx.message.text,
             config: {
                 systemInstruction: "You are a Chihiro a helpful ai assistant.",
                 // tools: [mcpToTool(mcpClient)],  // uses the session, will automatically call the tool
