@@ -99,6 +99,7 @@ bot.on('message_reaction', (ctx) => {
     if (ctx.update.message_reaction.new_reaction.length !== 0) {
         console.log('Received emoji:', ctx.update.message_reaction.new_reaction[0].emoji);
     } else {
+        // For LLM, I can below message as it is: https://chatgpt.com/c/6a0de1d2-9df4-83e8-bd35-e22682af9dbb
         console.log('Reaction removed:', ctx.update.message_reaction.old_reaction[0].emoji);
     }
 });
