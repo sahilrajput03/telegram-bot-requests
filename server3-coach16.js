@@ -41,8 +41,9 @@ bot.on('message', async (ctx) => {
 
     // You can then check the message type and content
     if (ctx.message.text) {
-        // ctx.reply(`✅You sent a text message: ${ctx.message.text}`);
         ctx.reply(response.text);
+        // ctx.reply(`✅You sent a text message: ${ctx.message.text}`);
+        // ctx.reply(`🎉 This is **bold**, *italic*, and _underlined_ text.: ${ctx.message.text}`, { parse_mode: 'Markdown' });
     } else if (ctx.message.photo) {
         ctx.reply('✅You sent a photo!');
     } else {
