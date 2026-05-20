@@ -7,8 +7,9 @@ const { preventPunyCodeWarning } = require('./log-utils');
 
 preventPunyCodeWarning();
 
-const { COACH16_TOKEN } = process.env;
-const bot = new Telegraf(COACH16_TOKEN);
+const { COACH16_TOKEN, AAU_TOKEN } = process.env;
+// const bot = new Telegraf(COACH16_TOKEN);
+const bot = new Telegraf(AAU_TOKEN);
 
 bot.on('message', async (ctx) => {
     console.log('✅Received a message!');
@@ -33,6 +34,8 @@ bot.on('message', async (ctx) => {
     if (model.includes('gemma')) {
         delete thinkingConfig.thinkingBudget;
     }
+
+    // let responseText = "";
 
     let responseText;
     try {
@@ -60,7 +63,7 @@ bot.on('message', async (ctx) => {
         // ctx.reply(responseText);
         // ctx.reply(`✅You sent a text message: ${ctx.message.text}`);
         // ctx.reply(`🎉 This is **bold**, *italic*, and _underlined_ text.: ${ctx.message.text}`, { parse_mode: 'Markdown' });
-        ctx.reply(responseText, { parse_mode: 'Markdown' });;
+        ctx.reply(responseText, { parse_mode: 'MarkdownV2' });;
     } else if (ctx.message.photo) {
         ctx.reply('✅You sent a photo!');
     } else {
