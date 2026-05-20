@@ -76,7 +76,7 @@ bot.on('message', async (ctx) => {
         // ctx.reply(escapers.MarkdownV2(responseText), { parse_mode: 'Markdown' });;
         // ❌ Below didn't work either:
         // ctx.replyWithMarkdownV2(escapers.MarkdownV2(responseText));
-        // Below worked:  (src: https://github.com/telegraf/telegraf/issues/1242#issuecomment-1733702791 )
+        // ✅ Below worked:  (src: https://github.com/telegraf/telegraf/issues/1242#issuecomment-1733702791 )
         // const html = await marked.parseInline(responseText);
         // ctx.replyWithHTML(html);
     } else if (ctx.message.photo) {
