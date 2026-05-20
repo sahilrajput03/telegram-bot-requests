@@ -12,8 +12,8 @@ const bot = new Telegraf(COACH16_TOKEN);
 
 bot.on('message', async (ctx) => {
     console.log('✅Received a message!');
-    console.log(ctx.message); // Log the entire message object
-    console.log(ctx.message.text); // Log the entire message object
+    // console.log(ctx.message); // Log the entire message object
+    // console.log(ctx.message.text); // Log the user message
 
     ctx.sendChatAction('typing');
     const intervalId = setInterval(() => ctx.sendChatAction('typing'), 7_000);
