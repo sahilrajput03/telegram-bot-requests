@@ -13,7 +13,9 @@ const marked = require('marked');
 
 preventPunyCodeWarning();
 
-const { COACH16_TOKEN, AAU_TOKEN } = process.env;
+const { COACH16_TOKEN, AAU_TOKEN, CHAT_ID_SAHIL } = process.env;
+const sahilChatId = CHAT_ID_SAHIL; // 711263195 (number)
+
 // const bot = new Telegraf(COACH16_TOKEN);
 const bot = new Telegraf(AAU_TOKEN);
 
@@ -106,4 +108,5 @@ bot.launch({
     allowedUpdates: ['message', 'message_reaction']
 }, () => {
     console.log('✅🚀Bot launched');
+    bot.telegram.sendMessage(sahilChatId, 'Hi Sahil, bot launched 🎉!');
 });
