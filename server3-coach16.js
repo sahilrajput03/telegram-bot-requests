@@ -77,6 +77,7 @@ bot.on('message', async (ctx) => {
         // ❌ Below didn't work either:
         // ctx.replyWithMarkdownV2(escapers.MarkdownV2(responseText));
         // ✅ Below worked:  (src: https://github.com/telegraf/telegraf/issues/1242#issuecomment-1733702791 )
+        //  The only issue I found with this is that <img> are not supported and we get error from `telegraf`.
         // const html = await marked.parseInline(responseText);
         // ctx.replyWithHTML(html);
     } else if (ctx.message.photo) {
