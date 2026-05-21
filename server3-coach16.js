@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config({ quiet: true });
 const { ai } = require('./config');
 const { preventPunyCodeWarning } = require('./log-utils');
-const { escapeMarkdownForTelegramMessage } = require('./utils');
+const { escapeMarkdownForTelegramMessage, sleep } = require('./utils');
 
 // https://github.com/telegraf/telegraf/issues/1242#issuecomment-1731617582
 const { escapers } = require("@telegraf/entity");
@@ -26,6 +26,7 @@ bot.on('message', async (ctx) => {
 
     ctx.sendChatAction('typing');
     const intervalId = setInterval(() => ctx.sendChatAction('typing'), 7_000);
+    // await sleep(300_000); // For testing infinite "typing" indicator.
 
     let model;
     // model= "gemini-2.5-flash",

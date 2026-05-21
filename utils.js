@@ -27,3 +27,7 @@ export const escapeMarkdownForTelegramMessage = (text) => {
     SPECIAL_CHARS.forEach(char => (text = text.replaceAll(char, `\\${char}`)));
     return text;
 };
+
+export function sleep(ms = 100) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
