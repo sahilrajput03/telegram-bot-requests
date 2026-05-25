@@ -27,7 +27,7 @@ if (aauJobs.length > 0) {
     console.log("✅ Loaded aau's jobs.");
 }
 
-// If job not found then add the job
+// If job not found then add fresh job
 const notFoundInScheduledJobs = !scheduledJobs.map(j => j.name).find(name => name === "WORK_PROGRESS_CHECK");
 if (notFoundInScheduledJobs) {
     console.log('🚀 No `workProgresJob` found.');
