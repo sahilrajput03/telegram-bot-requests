@@ -1,5 +1,7 @@
 const { Cron, scheduledJobs } = require('croner');
 
+// ^ Tip: Open this file in VsCode via alias `code.cron` directly.
+
 // Web: https://croner.56k.guru
 // Docs: https://github.com/Hexagon/croner
 // ChatGPT: https://chatgpt.com/c/6a0c9837-c090-83e8-aabc-7212219c85be
