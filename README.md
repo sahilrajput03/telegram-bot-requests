@@ -1,5 +1,7 @@
 # README
 
+*In case you are looking for whatsapp-automation, check this [repo instead](https://github.com/sahilrajput03/whatsapp-automation).*
+
 Visit: [Guide on .env encryption](https://github.com/sahilrajput03/devopswithkubernetes/tree/main/learn-sops#encrypting-decrypting-env-file) (#sops)
 
 **Quick Links:**
