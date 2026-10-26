@@ -8,14 +8,14 @@ const { Cron, scheduledJobs } = require('croner');
 // Deepwiki: https://deepwiki.com/search/i-want-to-load-cronjobs-from-a_dca296ea-5665-45bd-8067-f34cf5eea214?mode=fast
 
 /*
-┌──────────────── (optional) second (0 - 59)
-│ ┌────────────── minute (0 - 59)
-│ │ ┌──────────── hour (0 - 23)
-│ │ │ ┌────────── day of month (1 - 31)
-│ │ │ │ ┌──────── month (1 - 12, JAN-DEC)         [JAN=1]
-│ │ │ │ │ ┌────── day of week (0 - 6, SUN-SAT)    [SUN=0 or 7]
+┌──────────────── (optional) SECOND (0 - 59)
+│ ┌────────────── MINUTE (0 - 59)
+│ │ ┌──────────── HOUR (0 - 23)
+│ │ │ ┌────────── DAY-OF-MONTH (1 - 31)
+│ │ │ │ ┌──────── MONTH (1 - 12, JAN-DEC; JAN=1)
+│ │ │ │ │ ┌────── DAY-OF-WEEK (0 - 6, SUN-SAT; SUN=0 or 7)
 │ │ │ │ │ │
-│ │ │ │ │ │ ┌──── (optional) year (1 - 9999)
+│ │ │ │ │ │ ┌──── (optional) YEAR (1 - 9999)
 │ │ │ │ │ │ │
 * * * * * * *
 1 2 3 4 5 6 7
