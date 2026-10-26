@@ -12,12 +12,13 @@ const { Cron, scheduledJobs } = require('croner');
 │ ┌────────────── minute (0 - 59)
 │ │ ┌──────────── hour (0 - 23)
 │ │ │ ┌────────── day of month (1 - 31)
-│ │ │ │ ┌──────── month (1 - 12, JAN-DEC)
-│ │ │ │ │ ┌────── day of week (0 - 6, SUN-Mon) 
-│ │ │ │ │ │       (0 to 6 are Sunday to Saturday; 7 is Sunday, the same as 0)
+│ │ │ │ ┌──────── month (1 - 12, JAN-DEC)         [JAN=1]
+│ │ │ │ │ ┌────── day of week (0 - 6, SUN-SAT)    [SUN=0 or 7]
+│ │ │ │ │ │
 │ │ │ │ │ │ ┌──── (optional) year (1 - 9999)
 │ │ │ │ │ │ │
- * * * * * *
+* * * * * * *
+1 2 3 4 5 6 7
 
 👉🏻 Optional second and year fields for enhanced precision:
 - 5-field format:         MINUTE  HOUR  DAY-OF-MONTH  MONTH  DAY-OF-WEEK
